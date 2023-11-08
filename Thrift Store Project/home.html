@@ -1,30 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
  
 </head>
 <body>
+<!--Body-->
+    <!--Head Navbar-->
+    <header>
+        <a href="home.html"><img src="./images/logo.svg" alt="Logo"></a>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="index1.html">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <button><a href="#"><img src="./images/user.svg" alt=""></a></button>
+            <button><a href="#"><img src="./images/cart.svg" alt=""></a></button>
+        </div>
+    </header>
+    <!--Hero Section-->
     <div class="hero_div">
         <div class="overlay"></div>
+        <!--Search Box-->
+        <div class="search-box">
+            <form action="#" class="searchbar">
+                <input type="text" placeholder="Search">
+                <button type="submit"><img src="./images/search.svg" alt=""></button>
+            </form>
+        </div>
+        <!--Background Imgae and Write-up-->
         <img class="hero_image" src="/images/hero-img.jpg" alt="Hero Image">
         <div class="caption">
-            <img src="images/logo.svg" alt="logo here">
+            <img class="Hero_Logo" src="images/logo.svg" alt="logo here">
             <br>
             <h1 style="font-size: 100px; margin-bottom: 0;">Get 25% off</h1>
-            <h6 style="margin: 0">Get 25% off on all medium to large clothing sizes from Jan 28th to Feb 27th.</h6>
-            <h6 style="margin: 15px">Dont miss thsi offer.</h6>
+            <h4 style="margin: 0; font-weight: 200;">Get 25% off on all medium to large clothing sizes from Jan 28th to Feb 27th.</h4>
+            <h4 style="margin: 15px; font-weight: 200;">Dont miss this offer.</h4>
+        </div>
+        <!--Shop Now Button-->
+        <div class="ShopNowDiv">
+            <button class="ShopNowButton"><a href="index1.html">Shop Now!</a></button>
         </div>
     </div>
+    <!--New Release Section-->
     <div class="New_R_ParentDiv">
         <div class="New_R_Div">
             <h1 class="New_R_Div_h1">New Releases</h1>
         </div>
+        <!--First Row Images-->
         <div style="display: flex; justify-content: space-between;">
             <div>
                 <img style="width: 100%; padding-bottom: 20px;" src="/images/image 2.jpg" alt="">
@@ -36,6 +67,7 @@
                 <img style="width: 100%; padding-bottom: 20px;" src="/images/photo-1541099649105-f69ad21f3246 1.jpg" alt="">
             </div>
         </div>
+        <!--Second Row Images-->
         <div style="display: flex; justify-content: space-between;">
             <div>
                 <img style="width: 100%;" src="/images/image 4.jpg" alt="">
@@ -47,6 +79,7 @@
                 <img style="width: 100%;" src="/images/image 6.jpg" alt="">
             </div>
         </div>
+        <!--Pagination-->
         <div class="pagination">
             <a class="scroll" href="#">&laquo;</a>
             <a class="active" href="#">1</a>
@@ -55,8 +88,7 @@
             <a class="scroll" href="#">&raquo;</a>
         </div>
     </div>
-
-
+    <!--Discount Image Div-->
     <div class="DiscountPicture">
         <img class="DiscountImg" src="images/Discount.jpg" alt="">
         <div class="Discount-text">
@@ -65,19 +97,20 @@
             <button class="buy-now-white">Buy Now!</button>
         </div>
     </div>
+    <!--Newsletter-->
     <div class="NewsletterSection">
         <h1  class="Newsletter">Newsletter</h1>
         <h2 style="text-align: center; font-weight: 400;">Keep in touch to make sure you don't miss the best deals and prices.</h2>
+        <!--Email Input-->
         <div class="Email-container">
-            <input type="text" placeholder="Email address" name="mail" required>
+            <input class="enterMail" type="text" placeholder="Email address" name="mail" required>
         </div>
+        <!--Buy Now Button-->
         <div class="center-container">
             <button class="buy-now">Buy Now!</button>
         </div>
     </div>
-
-
-
+    <!--FFooter Section-->
     <div class="footer">
         <div class="hrule">
             <div class="footer-left">              
@@ -86,6 +119,7 @@
             <div class="footer-content">
                 <div class="footer-table">
                     <div class="footer-row">
+                        <!--Contact Us-->
                         <div class="footer-cell">
                             <div class="footer-heading">Contact Us</div>
                             <a class="footer-link" href="#">Newest Releases</a>
@@ -94,6 +128,7 @@
                             <br>
                             <a class="footer-link" href="#">Popular Demand</a>
                         </div>
+                        <!--About Us-->
                         <div class="footer-cell">
                             <div class="footer-heading">About Us</div>
                             <a class="footer-link" href="#">Blog</a>
@@ -102,6 +137,7 @@
                             <br>
                             <a class="footer-link" href="#">Login</a>
                         </div>
+                        <!--Get In Touch-->
                         <div class="footer-cell">
                             <div class="footer-heading">Contact Us</div>
                             <a class="footer-link" href="#">Get in touch</a>

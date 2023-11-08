@@ -1,4 +1,8 @@
-
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 
 body {
@@ -7,6 +11,121 @@ body {
     padding: 0;
     background-color: rgb(247, 247, 247) /*background color for the entire page */
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 10%;
+}
+
+li, a, button{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.navlinks{
+    list-style: none;
+}
+
+.navlinks li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navlinks li a{
+    transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover{
+    text-decoration: underline;
+}
+
+button{
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-box{
+    opacity: 70%;
+    width: 80%;
+    z-index: 3;
+    position: absolute;
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+}
+
+.searchbar{
+    opacity: 100%;
+    border: none;
+    width: 100%;
+    max-width: 1150px;
+    height: 90px;
+    background: #83765b;
+    display: flex;
+    align-items: center;
+    border-radius: 90px;
+    padding: 10px 20px;
+}
+
+.searchbar input{
+    opacity: 100%;
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 24px;
+    font-weight: medium;
+    color: #717171;
+    font-family: 'Outfit';
+}
+
+::placeholder{
+    color: #d7d7d7;
+    font-family: 'Outfit';
+}
+
+.searchbar button img{
+    width: 30px;
+}
+
+.searchbar button{
+    border: 0;
+    border-radius: 50px;
+    width: 110px;
+    height: 70px;
+    background: #2e2e2e;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+.search-box :hover{
+    background-color: white;
+}
+.search-box button:hover{
+    background-color: #6d6b6b;
+}
+
+
+
+
+
+
+
 .hero_div {
     position: relative;
 }
@@ -21,6 +140,7 @@ body {
     z-index: 1;
 }
 .hero_image {
+    height: 900px;
     width: 100%;
     z-index: 2;
 }
@@ -28,13 +148,54 @@ body {
 .caption {
     text-align: center;
     color: #ddd;
-    z-index: 3;
+    z-index: 4;
     position: absolute;
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Center the text */
-    font-size: 24px;
+    font-size: 25px;
+    
 }
+.Hero_Logo{
+    margin: 25px 0 25px 0;
+    filter: invert(1);
+    width: 140px;
+}
+
+.ShopNowDiv {
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+}
+.ShopNowButton a{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(151, 103, 14);
+    
+}
+.ShopNowButton {
+    margin: -20px 0 50px 0;
+    border: none;
+    background-color: white;
+    padding: 20px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 42px;
+    cursor: pointer;
+}
+.ShopNowButton:hover {
+    background-color: #eeeeee;
+}
+
+
+
+
 .New_R_ParentDiv{
     margin: 100px 250px;
 }
@@ -42,6 +203,7 @@ body {
     justify-content: space-around;
 }
 .New_R_Div_h1{
+    padding-bottom: 50px;
     text-align: center;
     font-size: 60px;
 }
@@ -126,7 +288,7 @@ display: flex;
 justify-content: space-around;
 padding: 20px;
 }
-input[type=text]{
+.enterMail{
     font-size: 20px;
     font-family: outfit;
     background-color: #eee;
